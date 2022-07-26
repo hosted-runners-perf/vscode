@@ -16,7 +16,6 @@ jobs:
   windows:
     name: Windows
     runs-on: windows-2022
-    timeout-minutes: 60
     env:
       CHILD_CONCURRENCY: "1"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -97,7 +96,6 @@ jobs:
   linux:
     name: Linux
     runs-on: ubuntu-22.04
-    timeout-minutes: 40
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -179,7 +177,6 @@ jobs:
   darwin:
     name: macOS
     runs-on: macos-11
-    timeout-minutes: 40
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -253,7 +250,6 @@ jobs:
   hygiene:
     name: Hygiene and Layering
     runs-on: ubuntu-22.04
-    timeout-minutes: 40
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
